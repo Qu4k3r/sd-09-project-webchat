@@ -11,10 +11,10 @@ Ao iniciar este projeto, você concorda com as diretrizes do Código de Ética e
 ## Sumário
 
 - [Habilidades](#habilidades)
-  - [O que foi desenvolvido](#o-que-foi-ser-desenvolvido)
-  - [Conexão com o banco](#conexão-com-o-banco)
-  - [Modelo de histórico do chat para que as mensagens persistam](#)
-  - [Testes](#)
+  - [O que foi desenvolvido](#o-que-foi-desenvolvido)
+  - [Conexão com o banco de dados](#conexão-com-o-banco-de-dados)
+  - [Modelo de histórico do chat para que as mensagens persistam](#modelo-de-histórico-do-chat-para-que-as-mensagens-persistam)
+  - [Testes](#testes)
 - [Avisos Finais](#avisos-finais)
 
 ## Habilidades
@@ -55,7 +55,7 @@ DB_NAME=webchat                             // nome do database
 
 ---
 
-## Modelo de histórico do chat para que as mensagens persistam.
+## Modelo de histórico do chat para que as mensagens persistam
 
 ### Exemplo de um documento:
     ```js
