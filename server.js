@@ -3,6 +3,7 @@ const express = require('express');
 const path = require('path');
 const { name } = require('faker');
 const moment = require('moment');
+require('dotenv').config();
 
 moment.updateLocale('en', {
   longDateFormat: {
