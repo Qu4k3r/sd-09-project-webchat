@@ -1,7 +1,7 @@
 // Faça seu código aqui
 const express = require('express');
 const path = require('path');
-// const { name } = require('faker');
+const { name } = require('faker');
 const moment = require('moment');
 require('dotenv').config();
 
@@ -24,13 +24,13 @@ let userList = [];
 let messageList;
 
 const generateRandomName = () => {
-  const randomName = 'Lucas';
+  let randomName;
 
-  // while (!/^[\w'-]{16}$/.test(randomName)) {
-  //   randomName = `${name.firstName()}-${name.lastName()}`.toLowerCase();
+  while (!/^[\w'-]{16}$/.test(randomName)) {
+    randomName = `${name.firstName()}-${name.lastName()}`.toLowerCase();
 
-  //   if (/^[\w'-]{16}$/.test(randomName)) break;
-  // }
+    if (/^[\w'-]{16}$/.test(randomName)) break;
+  }
 
   return randomName;
 };
