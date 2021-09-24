@@ -28,14 +28,15 @@ Ao iniciar este projeto, você concorda com as diretrizes do Código de Ética e
 ---
 
 ## O que foi desenvolvido
+
 Este projeto apresenta um _chat_ online e ao utilizar essa aplicação um usuário deverá ser capaz de:
 
- - Usar um front-end para enviar mensagens a clientes conectados;
- - Visualizar o histórico de mensagens da conversa;
- - Visualizar os usuários online no momento;
- - Alterar o nome de usuário no chat em tempo real;
+- Usar um front-end para enviar mensagens a clientes conectados;
+- Visualizar o histórico de mensagens da conversa;
+- Visualizar os usuários online no momento;
+- Alterar o nome de usuário no chat em tempo real;
 
- Através do cliente é possível enviar e receber mensagens, trocar seu nome, ver usuários online.
+Através do cliente é possível enviar e receber mensagens, trocar seu nome, ver usuários online.
 
 O MVC é usado para renderizar as mensagens do histórico e usuários online, com ambos vindo do servidor.
 
@@ -46,6 +47,7 @@ O desenho abaixo demonstra como o projeto pode ser estruturado! 🧑‍🎨
 ---
 
 ## Conexão com o banco de dados:
+
 As variáveis de ambiente receberão os seguintes valores
 
 ```
@@ -58,6 +60,7 @@ DB_NAME=webchat                             // nome do database
 ## Modelo de histórico do chat para que as mensagens persistam
 
 ### Exemplo de um documento:
+
     ```js
     {
       message: 'Lorem ipsum',
