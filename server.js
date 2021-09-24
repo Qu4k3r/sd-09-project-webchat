@@ -10,6 +10,8 @@ moment.updateLocale('en', {
   },
 });
 
+const PORT = process.env.PORT || 3000;
+
 const app = express();
 
 const socketIoServer = require('http').createServer(app);
@@ -96,4 +98,4 @@ app.get('/', (_, res) => {
   res.render('index', { userList, messageList });
 });
 
-socketIoServer.listen(3000, () => console.log('Listening on *:3000'));
+socketIoServer.listen(PORT, () => console.log(`App running on ${PORT}`));
