@@ -1,6 +1,6 @@
-require('dotenv').config();
+const APP_URL = window.location.href;
 
-const socket = window.io(process.env.URL);
+const socket = window.io(APP_URL);
 
 const userInput = document.querySelector('.nickname');
 const saveUserButton = document.querySelector('.post-nickname');
