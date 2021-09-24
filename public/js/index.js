@@ -1,4 +1,6 @@
-const socket = window.io('http://localhost:3000');
+require('dotenv').config();
+
+const socket = window.io(process.env.URL);
 
 const userInput = document.querySelector('.nickname');
 const saveUserButton = document.querySelector('.post-nickname');

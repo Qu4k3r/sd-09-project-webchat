@@ -14,7 +14,7 @@
   <h1 class="title">Bem-vindos ao chat desenvolvido com socket.io</h1>
   <!-- display flex row -->
   <header class="user-info-container">
-    <form action="index.html">
+    <form action="/">
       <input type="text" class="nickname" placeholder="Insira seu nome ou apelido" data-testid="nickname-box">
       <button class="post-nickname" data-testid="nickname-button">Salvar</button>
     </form>
@@ -53,7 +53,7 @@
     </form>
   </footer>
 
-  <script src="http://localhost:3000/socket.io/socket.io.js"></script>
+  <script src="http://process.env.URL/socket.io/socket.io.js"></script>
   <script src="./js/index.js"></script>
 </body>
 
